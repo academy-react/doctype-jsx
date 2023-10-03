@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Login from "./screens/Login/Login.jsx";
 import RouteError from "./screens/Errors/RouteError.jsx";
 import UnauthenticatedApp from "./App/UnauthenticatedApp/UnauthenticatedApp.jsx";
+import Landing from "./screens/Landing/Landing.jsx";
 
 const route = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const route = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <UnauthenticatedApp />,
+        element: <Landing />,
         errorElement: <RouteError />,
       },
       {
